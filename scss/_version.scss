@@ -1,0 +1,129 @@
+.version {
+    margin-top: 100px;
+    overflow: hidden;
+    .version__text {
+        color: #fff;
+        overflow: hidden;
+        h2 {
+            text-align: center;
+            font-size: 70px;
+            color: #F7DF1E;
+            margin-bottom: 20px;
+        } 
+        p {
+            line-height: 25px;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        .version__list {
+            line-height: 25px;
+            font-size: 16px;
+        }
+    }
+}
+@media (max-width: 990px) {
+    .version {
+        .version__text {
+            h2 {
+                font-size: 65px;
+            }
+            p {
+                font-size: 14px;
+            }
+            .version__list {
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media (max-width: 733px) {
+    .version {
+        .version__text {
+            h2 {
+                font-size: 60px;
+            }
+            p {
+                font-size: 16px;
+            }
+            .version__list {
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media (max-width: 495px) {
+    .version {
+        .version__text {
+            h2 {
+                font-size: 55px;
+            }
+            p {
+                font-size: 16px;
+            }
+            .version__list {
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media (max-width: 449px) {
+    .version {
+        .version__text {
+            h2 {
+                font-size: 50px;
+            }
+            p {
+                font-size: 10px;
+            }
+            .version__list {
+                font-size: 11px;
+            }
+        }
+    }
+}
+@media (max-width: 406px) {
+    .version {
+        .version__text {
+            h2 {
+                font-size: 45px;
+            }
+            p {
+                font-size: 8px;
+            }
+            .version__list {
+                font-size: 10px;
+            }
+        }
+    }
+}
+@media (max-width: 368px) {
+    .version {
+        .version__text {
+            h2 {
+                font-size: 40px;
+            }
+            p {
+                font-size: 13px;
+            }
+            .version__list {
+                font-size: 12px;
+            }
+        }
+    }
+}
+@media (max-width: 326px) {
+    .version {
+        .version__text {
+            h2 {
+                font-size: 35px;
+            }
+            p {
+                font-size: 13px;
+            }
+            .version__list {
+                font-size: 12px;
+            }
+        }
+    }
+}

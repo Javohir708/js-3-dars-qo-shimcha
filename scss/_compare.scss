@@ -1,0 +1,125 @@
+.compare {
+    margin-top: 100px;
+    overflow: hidden;
+    padding-bottom: 100px;
+    .compare__text {
+        text-align: center;
+        h2 {
+            font-size: 75px;
+            color: #F7DF1E;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #fff;
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+    }
+    .compare__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 35px;
+        .compare__card {
+            border-radius: 20px;
+            padding: 10px;
+            width: 300px;
+            height: 250px;
+            background-color: #161a39;
+            box-shadow: 5px 5px 5px #F7DF1E;
+            transition: .3s;
+            cursor: pointer;
+            &:hover {
+                box-shadow: none;
+            }
+            h3 {
+                color: #F7DF1E;
+                margin-bottom: 20px;
+                font-size: 21px;
+            }
+            p {
+                color: #fff;
+                margin-bottom: 20px;
+            }
+            i {
+                color: #F7DF1E;
+            }
+        }
+    }
+}
+@media (max-width: 1044px) {
+    .compare {
+        .compare__wrapper {
+            display: grid;
+            place-items: center;
+            grid-template-columns: repeat(2, auto);
+        }
+    }
+}
+@media (max-width: 760px) {
+    .compare {
+        .compare__text {
+            h2 {
+                font-size: 55px;
+            }
+            p {
+                font-size: 13px;
+            }
+        }
+        .compare__wrapper {
+            display: grid;
+            place-items: center;
+            grid-template-columns: repeat(1, auto);
+        }
+    }
+}
+@media (max-width: 447px) {
+    .compare {
+        .compare__text {
+            h2 {
+                font-size: 50px;
+            }
+            p {
+                font-size: 13px;
+            }
+        }
+        .compare__wrapper {
+            .compare__card {
+                h3 {
+                    font-size: 18px;
+                }
+                p {
+                    font-size: 14px;
+                }
+                i {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 333px) {
+    .compare {
+        .compare__text {
+            h2 {
+                font-size: 45px;
+            }
+            p {
+                font-size: 12px;
+            }
+        }
+        .compare__wrapper {
+            .compare__card {
+                width: 250px;
+                h3 {
+                    font-size: 18px;
+                }
+                p {
+                    font-size: 14px;
+                }
+                i {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}

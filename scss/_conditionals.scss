@@ -1,0 +1,88 @@
+.conditionals {
+    overflow: hidden;
+    .conditionals__text {
+        text-align: center;
+        h2 {
+            font-size: 75px;
+            color: #F7DF1E;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .conditionals__list {
+            text-align: start;
+            h3 {
+                margin-top: 15px;
+                color: #fff;
+                font-size: 16px;
+            }
+            i {
+                color: #F7DF1E;
+                line-height: 25px;
+            }
+        }
+    }
+}
+@media (max-width: 745px) {
+    .conditionals {
+        .conditionals__text {
+            h2 {
+                font-size: 65px;
+            }
+            p {
+                font-size: 16px;
+            }
+            .conditionals__list {
+                h3 {
+                    font-size: 14px;
+                }
+                i {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 500px) {
+    .conditionals {
+        .conditionals__text {
+            h2 {
+                font-size: 55px;
+            }
+            p {
+                font-size: 14px;
+            }
+            .conditionals__list {
+                h3 {
+                    font-size: 14px;
+                }
+                i {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 367px) {
+    .conditionals {
+        .conditionals__text {
+            h2 {
+                font-size: 45px;
+            }
+            p {
+                font-size: 13px;
+            }
+            .conditionals__list {
+                h3 {
+                    font-size: 13px;
+                }
+                i {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

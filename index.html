@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <link rel="icon" href="./assets/header__logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <div class="navbar__logo">
+            <img src="./assets/header__logo.png" alt="Logo image" />
+          </div>
+          <ul class="navbar__collection">
+            <li class="navbar__item">
+                <a href="#top" class="navbar__link">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#aboutId">
+                <span>JavaScript</span>
+              </a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#versionId">
+                <span>VS</span>
+              </a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#konsolId">
+                <span>Console</span>
+              </a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#variableId">
+                <span>Variable</span>
+              </a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#operatorsId">
+                <span>Operators</span>
+              </a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#dialogId">
+                <span>Alert...</span>
+              </a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#dataId">
+                <span>Data types</span>
+              </a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#stringId">
+                <span>String</span>
+              </a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#compareId">
+                <span>Compare oper...</span>
+              </a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#conditionalsId">
+                <span>Condition</span>
+              </a>
+            </li>
+          </ul>
+          <div class="navbar__btn">
+            <button>Sign Up</button>
+          </div>
+          <div class="navbar__menu">
+            <i class="fa-solid fa-bars" style="color: #ffd43b"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__wrapper">
+            <div class="hero__info">
+              <h2>JavaScript asoslari</h2>
+              <p>
+                JavaScript va uning versiyalari, console, variable: declare,
+                assign, re-assign, Arifmetik operator, alert, prompt, confirm,
+                Data types, Math object.
+              </p>
+            </div>
+            <div class="hero__image">
+              <img src="./assets/hero__image.png" alt="JavaScript image" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="about"
+        data-aos="fade-up"
+        id="aboutId"
+        data-aos-duration="1000"
+      >
+        <div class="container">
+          <div
+            class="about__text"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <h2 data-aos="zoom-in" data-aos-duration="800">JavaScript</h2>
+            <p
+              data-aos="fade-left"
+              data-aos-duration="800"
+              data-aos-delay="400"
+            >
+              JavaScript 1995-yilda Netscape kompaniyasi tomonidan ishlab
+              chiqilgan. Uni Brendan Eich yaratgan va dastlab "Mocha" deb
+              nomlangan. Keyinchalik "LiveScript" deb o‘zgartirilgan, ammo
+              Netscape brauzerining yuksalish davrida Java dasturlash tilidan
+              ilhomlanib, til nomini "JavaScript" deb o‘zgartirishgan.
+              1996-yilda JavaScript ECMAScript standarti bilan
+              rasmiylashtirilib, bugungi kunda veb-saytlar uchun asosiy
+              dasturlash tillaridan biriga aylangan. JavaScript saytlarni
+              dinamik qilish uchun ishlatiladigan asosiy dasturlash tilidir.
+              Saytning dinamikligi deganda, u sahifa yangilanmasdan o‘zgarishlar
+              qilish, foydalanuvchi bilan real vaqtda muloqot qilish va
+              kontentni avtomatik ravishda yangilash imkoniyatlari tushuniladi.
+              JavaScript orqali foydalanuvchi tugmalarni bosganda oynalar
+              ochilishi, shakllardagi ma’lumotlarning tekshirilishi yoki
+              sahifadagi animatsiyalarni boshqarish kabi interaktivlik qo‘shish
+              imkoniyatiga ega bo'ladi.
+            </p>
+          </div>
+          <div
+            class="about__image"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="600"
+          >
+            <img src="./assets/about__image.jpg" alt="JS image" />
+          </div>
+        </div>
+      </section>
+
+      <section class="version" id="versionId" data-aos="fade-up">
+        <div class="container">
+          <div class="version__text">
+            <h2 data-aos="fade-right">JavaScript Tarixi va Yangilanishlar</h2>
+            <p data-aos="fade-left">
+              JavaScript dastlabki chiqarilishi 1995-yilda Brendan Eich
+              (Netscape) tomonidan ishlab chiqarilgan. 1997-yilda ES1 versiyasi
+              chiqariladi. Shundan keyin yangi versiyalari ishlab chiqarila
+              boshlaydi:
+            </p>
+            <ul class="version__list">
+              <li data-aos="zoom-in" data-aos-delay="100">
+                1998 - ES2: Kichik o'zgarishlar va standartni yaxshilash.
+              </li>
+              <li data-aos="zoom-in" data-aos-delay="200">
+                1999 - ES3: JavaScript'ni kengaytiradigan xususiyatlar
+                kiritildi, masalan, yaxshilangan qatorlar, xatolarni tutish va
+                boshqa metodlar.
+              </li>
+              <li data-aos="zoom-in" data-aos-delay="300">
+                2009 - ES5: JavaScript'ning eng mashhur versiyalaridan biri.
+                'Strict mode', JSON qo'llab-quvvatlovi, va yangi metodlar bilan
+                tanish bo'ldi. Bu versiya keng tarqaldi va zamonaviy veb
+                dasturlashda asosiy asos bo'lib xizmat qildi.
+              </li>
+              <li data-aos="zoom-in" data-aos-delay="400">
+                2015 - ES6 (ES2015): Katta o'zgarishlar, jumladan, let/const,
+                arrow functions, classlar, va modullar kiritildi. Bu versiya
+                JavaScript'ni boshqa zamonaviy dasturlash tillari darajasiga
+                ko'tarishga yordam berdi...
+              </li>
+            </ul>
+            <h2 data-aos="fade-right">Muvaffaqiyatlar</h2>
+            <ul class="version__list">
+              <li data-aos="fade-up" data-aos-delay="100">
+                1. Keng Qamrovli Foydalanish: JavaScript veb dasturlash, mobil
+                dasturlar, server tomonidagi dasturlar va hatto ish stoli
+                ilovalarida keng qo'llaniladi.
+              </li>
+              <li data-aos="fade-up" data-aos-delay="200">
+                2. Katta Jamoa: JavaScript rivojlanishi va
+                qo'llab-quvvatlanishiga katta jamoa hissa qo'shmoqda, turli
+                kutubxonalar va ramkalar (masalan, React, Angular, Vue.js)
+                ishlab chiqilmoqda.
+              </li>
+              <li data-aos="fade-up" data-aos-delay="300">
+                3. Doimiy Yangilanishlar: ECMAScript standartlari muntazam
+                ravishda yangilanib, yangi xususiyatlar va sintaksis qo'shiladi.
+                Bu dasturchilarga yanada samarali va qulay ishlash imkonini
+                beradi.
+              </li>
+              <li data-aos="fade-up" data-aos-delay="400">
+                4. Muvaffaqiyatli Kutilgan Tizimlar: Node.js, Express.js va
+                boshqa server tomonidagi texnologiyalar JavaScriptni backend
+                dasturlashda mashhur qildi.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="konsol" id="konsolId">
+        <div class="container" data-aos="fade-up">
+          <div class="konsol__text">
+            <h2>console.log()</h2>
+            <p>
+              JavaScriptdagi console obyekti brauzer yoki ishlash muhiti bilan
+              o'zaro aloqada bo'lish uchun ishlatiladi, ayniqsa xatolarni
+              izlash, debugging va hodisalarni qayd qilishda yordam beradi. Bu
+              o'zingiz yaratgan kodlar haqida ma'lumot olish uchun juda qulay
+              vosita hisoblanadi
+            </p>
+          </div>
+          <div class="konsol__wrapper">
+            <div class="konsol__card" data-aos="fade-up" data-aos-delay="100">
+              <h3>console.log()</h3>
+              <p>
+                Kodlarni test qilish va umumiy ma'lumotlarni chop etish uchun
+                ishlatiladi. Bu kodda turli o'zgaruvchi yoki xabarlarni chop
+                etadi.
+              </p>
+              <h4><i>console.log("Hello, World!");</i></h4>
+              <h4><i>console.log(25 + 5); // Natija: 30</i></h4>
+            </div>
+            <div class="konsol__card" data-aos="fade-up" data-aos-delay="200">
+              <h3>console.error()</h3>
+              <p>
+                Xatolik yuz berganda xabar chop etish uchun ishlatiladi.
+                Ko'pincha qizil rangda chiqadi va xatolarni tezroq ko'rishga
+                yordam beradi.
+              </p>
+              <h4><i>console.error("Xatolik yuz berdi!");</i></h4>
+            </div>
+            <div class="konsol__card" data-aos="fade-up" data-aos-delay="300">
+              <h3>console.warn()</h3>
+              <p>
+                Ogohlantirishlarni chop etadi, ammo bu xatolik emas. Kodda
+                potentsial xato bo'lishi mumkin bo'lgan joylarni ko'rsatish
+                uchun ishlatiladi.
+              </p>
+              <h4><i>console.warn("Bu faqat ogohlantirish.");</i></h4>
+            </div>
+            <div class="konsol__card" data-aos="fade-up" data-aos-delay="400">
+              <h3>console.info()</h3>
+              <p>
+                Ma'lumot sifatida xabar chop etadi. Bu console.log() ga
+                o'xshaydi, lekin ko'pincha faqat ma'lumot uchun ishlatiladi.
+              </p>
+              <h4><i>console.info("Bu umumiy ma'lumot.");</i></h4>
+            </div>
+            <div class="konsol__card" data-aos="fade-up" data-aos-delay="500">
+              <h3>console.assert()</h3>
+              <p>
+                Berilgan shart noto'g'ri bo'lsa, xatolik xabarini ko'rsatadi.
+                Shart to'g'ri bo'lsa, hech narsa chiqarmaydi.
+              </p>
+              <h4>
+                <i
+                  >console.assert(5 > 10, "Bu xabar noto'g'ri bo'lsa
+                  chiqadi.");</i
+                >
+              </h4>
+            </div>
+            <div class="konsol__card" data-aos="fade-up" data-aos-delay="600">
+              <h3>console.clear()</h3>
+              <p>
+                Konsolni tozalaydi, faqat konsol oynasida bo'sh joy qoldiradi.
+              </p>
+              <h4><i>console.clear();</i></h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="variable"
+        id="variableId"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div class="container">
+          <div
+            class="variable__image"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
+            <img src="./assets/variables.jpg" alt="JS image" />
+          </div>
+          <div
+            class="variable__text"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <h2>Variable</h2>
+            <p>
+              JavaScriptda o'zgaruvchilar (variables) ma'lumotlarni saqlash
+              uchun ishlatiladi. O'zgaruvchilar yordamida qiymatlarni
+              o'zgartirish va boshqarish mumkin.
+            </p>
+            <ul class="variable__list">
+              <li>
+                1. var: Eski versiyalarda o'zgaruvchilarni e'lon qilish uchun
+                ishlatilgan. O'zgaruvchilarni global yoki funksional doirada
+                yaratadi. Qayta e'lon qilish va qiymatini o'zgartirish mumkin.
+              </li>
+              <li>
+                <h4>var a = 10;</h4>
+                <h4>a = 20; // a ning yangi qiymati 20</h4>
+              </li>
+              <li>
+                2. let: ES6 (ECMAScript 2015) dan boshlab kiritilgan. Blok
+                doirasida o'zgaruvchilarni yaratadi, ya'ni faqat e'lon qilingan
+                blok ichida mavjud. Qayta e'lon qilish mumkin emas, ammo
+                qiymatini o'zgartirish mumkin.
+              </li>
+              <li>
+                <h4>let b = 30;</h4>
+                <h4>b = 40; // b ning yangi qiymati 40</h4>
+              </li>
+              <li>
+                3. const: ES6 dan kiritilgan. O'zgaruvchi qiymatini bir marta
+                e'lon qilish mumkin va keyinchalik o'zgartirib bo'lmaydi (lekin
+                agar u ob'ekt yoki massiv bo'lsa, uning ichki qiymatlari
+                o'zgartirilishi mumkin).
+              </li>
+              <li>
+                <h4>const c = 50;</h4>
+                <h4>
+                  // c = 60; // Xato: const o'zgaruvchini o'zgartirib bo'lmaydi
+                </h4>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="operators"
+        id="operatorsId"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div class="container">
+          <div
+            class="operators__text"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <h2>Operatorlar</h2>
+            <p>
+              JavaScript-da operatorlar ma'lumotlarni manipulyatsiya qilish,
+              hisoblash yoki taqqoslash uchun ishlatiladi. Ular turli maqsadlar
+              uchun bir nechta turdagi operatorlarga ega.
+            </p>
+            <h3>Arifmetik operatorlar</h3>
+            <p>
+              Arifmetik operatorlar matematik amallarni bajarish uchun
+              ishlatiladi:
+            </p>
+            <ul class="operators__list">
+              <li data-aos="fade-up" data-aos-duration="800">
+                1. Qo'shish (+): Ikkita qiymatni qo'shadi.
+              </li>
+              <li data-aos="zoom-in" data-aos-duration="800">
+                <h4>let sum = 5 + 3; // 8</h4>
+              </li>
+
+              <li
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="100"
+              >
+                2. Ayirish (-): Birinchi qiymatdan ikkinchi qiymatni ayiradi.
+              </li>
+              <li
+                data-aos="zoom-in"
+                data-aos-duration="800"
+                data-aos-delay="100"
+              >
+                <h4>let difference = 5 - 3; // 2</h4>
+              </li>
+
+              <li
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="200"
+              >
+                3. Ko'paytirish (*): Ikkita qiymatni ko'paytiradi.
+              </li>
+              <li
+                data-aos="zoom-in"
+                data-aos-duration="800"
+                data-aos-delay="200"
+              >
+                <h4>let product = 5 * 3; // 15</h4>
+              </li>
+
+              <li
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="300"
+              >
+                4. Bo'lish (/): Birinchi qiymatni ikkinchi qiymatga bo'ladi.
+              </li>
+              <li
+                data-aos="zoom-in"
+                data-aos-duration="800"
+                data-aos-delay="300"
+              >
+                <h4>let quotient = 15 / 3; // 5</h4>
+              </li>
+
+              <li
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="400"
+              >
+                5. Qoldiq (%): Bo'linishdan qolgani beradi (modulus).
+              </li>
+              <li
+                data-aos="zoom-in"
+                data-aos-duration="800"
+                data-aos-delay="400"
+              >
+                <h4>let remainder = 10 % 3; // 1</h4>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="dialog"
+        id="dialogId"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div class="container" data-aos="zoom-in" data-aos-duration="1200">
+          <div
+            class="dialog__text"
+            data-aos="fade-right"
+            data-aos-duration="1400"
+          >
+            <h2 data-aos="fade-left" data-aos-duration="1600">
+              Alert, prompt va confirm
+            </h2>
+            <p data-aos="fade-up" data-aos-duration="1800">
+              JavaScript'dagi alert, prompt, va confirm funksiyalari...
+            </p>
+            <ul class="dialog__list">
+              <li data-aos="fade-up" data-aos-duration="2000">
+                1. alert() funksiyasi...
+              </li>
+              <li data-aos="fade-up" data-aos-duration="2200">
+                <h4>
+                  alert("Xush kelibsiz! Ushbu saytdan foydalanishni davom
+                  eting.");
+                </h4>
+              </li>
+              <li data-aos="fade-up" data-aos-duration="2400">
+                2. prompt() funksiyasi...
+              </li>
+              <li data-aos="fade-up" data-aos-duration="2600">
+                <h4>let ism = prompt("Ismingiz nima?"); ...</h4>
+              </li>
+              <li data-aos="fade-up" data-aos-duration="2800">
+                3. confirm() funksiyasi...
+              </li>
+              <li data-aos="fade-up" data-aos-duration="3000">
+                <h4>
+                  let davomEtish = confirm("Saytdan chiqmoqchimisiz?"); ...
+                </h4>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="data"
+        id="dataId"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div class="container" data-aos="fade-right" data-aos-duration="1000">
+          <div class="data__image" data-aos="zoom-in" data-aos-duration="1000">
+            <img src="./assets/data_type.jpg" alt="JS image" />
+          </div>
+
+          <div class="data__text" data-aos="fade-left" data-aos-duration="1000">
+            <h2>Data Types</h2>
+            <p>
+              JavaScriptda ma'lumot turlari (data types) asosiy va muhim
+              tushunchalardan biri bo'lib, ular o'zgaruvchilarga qanday turdagi
+              qiymatlar berilishini belgilaydi.
+            </p>
+
+            <ul class="data__list">
+              <li>
+                1. String – Matnni ifodalash uchun ishlatiladi. Matnlar
+                qo’shtirnoq ("") yoki birtirnoq ('') ichida yoziladi.
+              </li>
+              <li><h4>let text = "Salom, dunyo!";</h4></li>
+
+              <li>
+                2. Number – Raqamlar va o'nli sonlarni ifodalash uchun
+                ishlatiladi.
+              </li>
+              <li><h4>let yosh = 25;</h4></li>
+              <li><h4>let pi = 3.14;</h4></li>
+
+              <li>
+                3. Boolean – Faqat ikkita qiymatga ega: true yoki false.
+                Shartlarni tekshirishda qo'llaniladi.
+              </li>
+              <li><h4>let isStudent = true;</h4></li>
+
+              <li>
+                4. Undefined – Qiymat berilmagan o'zgaruvchilar uchun
+                ishlatiladi.
+              </li>
+              <li><h4>let name;</h4></li>
+              <li><h4>console.log(name); // undefined</h4></li>
+
+              <li>
+                5. Null – Bo’sh yoki qiymat mavjud emasligini bildirish uchun
+                ishlatiladi.
+              </li>
+              <li><h4>let response = null;</h4></li>
+
+              <li>
+                6. Symbol – Unikal va o'zgarmas qiymatlar yaratish uchun
+                ishlatiladi. Asosan ob'ektlarning o'ziga xos identifikatorlarini
+                yaratishda qo'llaniladi.
+              </li>
+              <li><h4>let uniqueId = Symbol('id');</h4></li>
+
+              <li>
+                7. Object – Bir nechta qiymatlarni bitta o'zgaruvchiga bog'lash
+                uchun ishlatiladi. Masalan, obyekt, massiv (array), va
+                funksiyalar ham obyekt hisoblanadi.
+              </li>
+              <li><h4>let user = { name: "Ali", age: 30 };</h4></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="string" id="stringId">
+        <div class="container">
+          <div class="string__text" data-aos="fade-up">
+            <h2>String</h2>
+            <p>bir yoki bir nechta belgilarni ifodalovchi ma'lumot turidir</p>
+          </div>
+
+          <div class="string__wrapper">
+            <div class="string__card" data-aos="zoom-in" data-aos-delay="100">
+              <h3>String yaratish</h3>
+              <h4>let <i>salomlashish</i> = "Salom, dunyo!";</h4>
+            </div>
+            <div class="string__card" data-aos="zoom-in" data-aos-delay="200">
+              <h3>Stringni birlashtirish:</h3>
+              <h4>let firstName = "Ali";</h4>
+              <h4>let lastName = "Khan";</h4>
+              <h4>let fullName = firstName + " " + lastName;</h4>
+              <h4>console.log(fullName); // Ali Khan</h4>
+            </div>
+            <div class="string__card" data-aos="zoom-in" data-aos-delay="300">
+              <h3>Raqamlarni qo'shish:</h3>
+              <h4>let a = 10;</h4>
+              <h4>let b = 5;</h4>
+              <h4>let sum = a + b;</h4>
+              <h4>console.log(sum); // 15</h4>
+            </div>
+            <div class="string__card" data-aos="zoom-in" data-aos-delay="400">
+              <h3>Raqamlarni ayirish:</h3>
+              <h4>let a = 20;</h4>
+              <h4>let b = 8;</h4>
+              <h4>let difference = a - b;</h4>
+              <h4>console.log(difference); // 12</h4>
+            </div>
+            <div class="string__card" data-aos="zoom-in" data-aos-delay="500">
+              <h3>Raqamlarni ko'paytirish:</h3>
+              <h4>let a = 4;</h4>
+              <h4>let b = 6;</h4>
+              <h4>let product = a * b;</h4>
+              <h4>console.log(product); // 24</h4>
+            </div>
+            <div class="string__card" data-aos="zoom-in" data-aos-delay="600">
+              <h3>Raqamlarni bo'lish:</h3>
+              <h4>let a = 15;</h4>
+              <h4>let b = 3;</h4>
+              <h4>let quotient = a / b;</h4>
+              <h4>console.log(quotient); // 5</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="compare" id="compareId">
+        <div class="container">
+          <div class="compare__text">
+            <h2 data-aos="fade-up">Compare operatorlari</h2>
+            <p data-aos="fade-up" data-aos-delay="100">
+              Taqqoslash operatorlari (comparison operators) bir qiymatni
+              boshqasiga solishtirish uchun ishlatiladi. Bu operatorlar natijada
+              true (haqiqat) yoki false (yolg'on) qiymatlarni qaytaradi.
+            </p>
+          </div>
+
+          <div class="compare__wrapper">
+            <div class="compare__card" data-aos="zoom-in">
+              <h3>Tenglik operatori (==)</h3>
+              <p>
+                Bu operator ikkita qiymatni solishtiradi va ularning tengligini
+                tekshiradi. Agar qiymatlar teng bo'lsa, true qaytaradi, aks
+                holda false.
+              </p>
+              <i>
+                <h4>
+                  console.log(5 == '5'); // true (teng, lekin turli tipda)
+                </h4>
+              </i>
+            </div>
+            <div class="compare__card" data-aos="zoom-in" data-aos-delay="100">
+              <h3>Tenglik operatori (===)</h3>
+              <p>
+                Bu operator qiymatlarning tengligini va turini ham solishtiradi.
+                Agar ikkala qiymat teng va bir xil turda bo'lsa, true qaytaradi.
+              </p>
+              <i>
+                <h4>console.log(5 === '5'); // false (tur farqi bor)</h4>
+              </i>
+              <i>
+                <h4>console.log(5 === 5); // true (teng va tur ham bir xil)</h4>
+              </i>
+            </div>
+            <div class="compare__card" data-aos="zoom-in" data-aos-delay="200">
+              <h3>Teng emas operatori (!=)</h3>
+              <p>
+                Bu operator ikkita qiymatning teng emasligini tekshiradi. Agar
+                qiymatlar teng bo'lmasa, true qaytaradi.
+              </p>
+              <i>
+                <h4>console.log(5 != 3); // true</h4>
+              </i>
+              <i>
+                <h4>console.log(5 != 5); // false</h4>
+              </i>
+            </div>
+            <div class="compare__card" data-aos="zoom-in" data-aos-delay="300">
+              <h3>Teng emas operatori (!==)</h3>
+              <p>
+                Bu operator qiymatlarning teng emasligini va turini
+                solishtiradi. Agar ikkala qiymat teng emas yoki tur farqi
+                bo'lsa, true qaytaradi.
+              </p>
+              <i>
+                <h4>console.log(5 !== '5'); // true (tur farqi bor)</h4>
+              </i>
+              <i>
+                <h4>
+                  console.log(5 !== 5); // false (teng va tur ham bir xil)
+                </h4>
+              </i>
+            </div>
+            <div class="compare__card" data-aos="zoom-in" data-aos-delay="400">
+              <h3>Katta (>) va kichik (<) operatorlar</h3>
+              <p>
+                Bu operatorlar bir qiymatning boshqa qiymatdan katta yoki
+                kichikligini tekshiradi. Agar birinchi qiymat ikkinchi qiymatdan
+                katta bo'lsa, true, aks holda false qaytaradi.
+              </p>
+              <i>
+                <h4>console.log(10 > 5); // true</h4>
+              </i>
+              <i>
+                <h4>console.log(5 < 10); // true</h4>
+              </i>
+              <i>
+                <h4>console.log(5 < 5); // false</h4>
+              </i>
+            </div>
+            <div class="compare__card" data-aos="zoom-in" data-aos-delay="500">
+              <h3>Katta yoki teng (>=) va kichik yoki teng (<=) operatorlar</h3>
+              <p>
+                Bu operatorlar bir qiymatning boshqa qiymatdan katta yoki teng,
+                yoki kichik yoki tengligini tekshiradi.
+              </p>
+              <i>
+                <h4>console.log(5 >= 5); // true</h4>
+              </i>
+              <i>
+                <h4>console.log(10 <= 5); // false</h4>
+              </i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="conditionals" id="conditionalsId">
+        <div class="container">
+          <div class="conditionals__text" data-aos="fade-up">
+            <h2>Conditionals</h2>
+            <p>
+              Shartli operatorlar (conditionals) kodning ma'lum bir qismining
+              bajarilishi yoki bajarilmasligini belgilash uchun ishlatiladi.
+            </p>
+
+            <ul class="conditionals__list">
+              <li data-aos="fade-right">
+                <h3>
+                  1. if operatori - if operatori shart bajarilsa, biror kod
+                  blokini bajaradi.
+                </h3>
+                <i><h4>let age = 18;</h4></i>
+                <i><h4>if (age >= 18) {</h4></i>
+                <i><h4>console.log("Siz voyaga yetgansiz.");</h4></i>
+                <i><h4>}</h4></i>
+              </li>
+              <li data-aos="fade-right">
+                <h3>
+                  2. else operatori - else operatori if sharti to'g'ri
+                  bo'lmaganda bajariladigan kodni belgilash uchun ishlatiladi.
+                </h3>
+                <i><h4>let age = 16;</h4></i>
+                <i><h4>if (age >= 18) {</h4></i>
+                <i><h4>console.log("Siz voyaga yetgansiz.");</h4></i>
+                <i><h4>} else {</h4></i>
+                <i><h4>console.log("Siz voyaga yetmagan ekansiz.");}</h4></i>
+              </li>
+              <li data-aos="fade-right">
+                <h3>
+                  3. else if operatori - Agar bir nechta shartlarni tekshirish
+                  kerak bo'lsa, else if operatoridan foydalaniladi.
+                </h3>
+                <i><h4>if (shart1) {</h4></i>
+                <i><h4>// shart1 to'g'ri bo'lsa</h4></i>
+                <i><h4>} else if (shart2) {</h4></i>
+                <i><h4>// shart2 to'g'ri bo'lsa</h4></i>
+                <i><h4>} else {</h4></i>
+                <i><h4>// hech biri to'g'ri bo'lmasa</h4></i>
+                <i><h4>}</h4></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 | Developer: Javohir Jo'rayev</p>
+      </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

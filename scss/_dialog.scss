@@ -1,0 +1,162 @@
+.dialog {
+    margin-top: 100px;
+    overflow: hidden;
+    .dialog__text {
+        h2 {
+            text-align: center;
+            font-size: 75px;
+            color: #F7DF1E;
+            margin-bottom: 10px;
+        } 
+        p {
+            line-height: 25px;
+            color: #fff;
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .dialog__list {
+            line-height: 25px;
+            li {
+                font-size: 16px;
+                color: #fff;
+                margin-bottom: 10px;
+                h4 {
+                    color: #F7DF1E;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 790px) {
+    .dialog {
+        .dialog__text {
+            h2 {
+                font-size: 65px;
+            }
+            p {
+                font-size: 16px;
+            }
+            .dialog__list {
+                li {
+                    font-size: 14px;
+                    color: #fff;
+                    margin-bottom: 10px;
+                    h4 {
+                        color: #F7DF1E;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 604px) {
+    .dialog {
+        .dialog__text {
+            h2 {
+                font-size: 60px;
+            }
+            p {
+                font-size: 16px;
+            }
+            .dialog__list {
+                li {
+                    font-size: 14px;
+                    color: #fff;
+                    margin-bottom: 10px;
+                    h4 {
+                        color: #F7DF1E;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 539px) {
+    .dialog {
+        .dialog__text {
+            h2 {
+                font-size: 55px;
+            }
+            p {
+                font-size: 14px;
+            }
+            .dialog__list {
+                li {
+                    font-size: 13px;
+                    color: #fff;
+                    margin-bottom: 10px;
+                    h4 {
+                        color: #F7DF1E;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 433px) {
+    .dialog {
+        .dialog__text {
+            h2 {
+                font-size: 50px;
+            }
+            p {
+                font-size: 12px;
+            }
+            .dialog__list {
+                li {
+                    font-size: 13px;
+                    color: #fff;
+                    margin-bottom: 10px;
+                    h4 {
+                        color: #F7DF1E;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 349px) {
+    .dialog {
+        .dialog__text {
+            h2 {
+                font-size: 45px;
+            }
+            p {
+                font-size: 12px;
+            }
+            .dialog__list {
+                li {
+                    font-size: 13px;
+                    color: #fff;
+                    margin-bottom: 10px;
+                    h4 {
+                        color: #F7DF1E;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 315px) {
+    .dialog {
+        .dialog__text {
+            h2 {
+                font-size: 40px;
+            }
+            p {
+                font-size: 12px;
+            }
+            .dialog__list {
+                li {
+                    font-size: 13px;
+                    color: #fff;
+                    margin-bottom: 10px;
+                    h4 {
+                        color: #F7DF1E;
+                    }
+                }
+            }
+        }
+    }
+}

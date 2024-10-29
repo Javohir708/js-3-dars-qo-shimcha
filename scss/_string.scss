@@ -1,0 +1,136 @@
+.string {
+    overflow: hidden;
+    .string__text {
+        color: #fff;
+        text-align: center;
+        h2 {
+            font-size: 80px;
+            color: #F7DF1E; 
+        }
+        p {
+            margin-top: 10px;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+    }
+    .string__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 20px;
+        .string__card {
+            line-height: 25px;
+            margin-bottom: 30px;
+            width: 350px;
+            height: 180px;
+            background-color: #161a39;
+            box-shadow: 5px 5px 5px #F7DF1E;
+            border-radius: 20px;
+            padding: 10px;
+            transition: .3s;
+            cursor: pointer;
+            &:hover {
+                box-shadow: none;
+            }
+            h3 {
+                padding-top: 6px;
+                color: #fff;
+                margin-bottom: 25px;
+            }
+            h4 {
+                color: #F7DF1E;
+            }
+        }
+    }
+}
+@media (max-width: 1151px) {
+    .string {
+        .string__wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            place-items: center;
+        }
+    }
+}
+@media (max-width: 758px) {
+    .string {
+        .string__text {
+            h2 {
+                font-size: 65px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+        .string__wrapper {
+            display: grid;
+            grid-template-columns: repeat(1, auto);
+            place-items: center;
+            .string__card {
+                h3 {
+                    font-size: 16px;
+                }
+                h4 {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 464px) {
+    .string {
+        .string__text {
+            h2 {
+                font-size: 55px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media (max-width: 409px) {
+    .string {
+        .string__text {
+            h2 {
+                font-size: 45px;
+            }
+            p {
+                font-size: 13px;
+            }
+        }
+        .string__wrapper {
+            .string__card {
+                width: 300px;
+                h3 {
+                    font-size: 13px;
+                }
+                p {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 329px) {
+    .string {
+        .string__text {
+            h2 {
+                font-size: 40px;
+            }
+            p {
+                font-size: 11px;
+            }
+        }
+        .string__wrapper {
+            .string__card {
+                width: 270px;
+                h3 {
+                    font-size: 13px;
+                }
+                p {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}
