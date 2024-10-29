@@ -34,8 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
       navbar.classList.toggle("navbar--open");
       if (navbar.classList.contains("navbar--open")) {
-        this.style.zIndex = "100000"; //
-        this.innerHTML = "&times;"; // 
+        this.style.zIndex = "100000"; 
+        this.innerHTML = "&times;"; 
       } else {
           this.innerHTML = '<i class="fa-solid fa-bars" style="color: #ffd43b"></i>'; 
       }

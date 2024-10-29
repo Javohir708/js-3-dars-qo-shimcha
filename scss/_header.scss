@@ -118,10 +118,10 @@
         }
 
         .navbar__menu {
-            display: none; /* Dastlab yashirin */
-            cursor: pointer; /* Ko'rsatkich */
+            display: none; 
+            cursor: pointer;
             font-size: 20px;
-            color: #fff; /* Rangini o'rnating */
+            color: #fff; 
         }
     }
 }
@@ -131,17 +131,17 @@
         .navbar {
             .navbar__collection,
             .navbar__btn {
-                display: none; /* Kichik ekranlarda yashirinadi */
+                display: none; 
             }
             .navbar__menu {
-                display: block; /* Mobilda ko'rinadi */
+                display: block; 
             }
 
             &.navbar--open {
                 .navbar__collection {
                     display: flex;
                     flex-direction: column;
-                    position: fixed; /* Yuqoridan pastga ko'chadi */
+                    position: fixed;
                     top: 0;
                     right: 0;
                     height: 100vh;
@@ -149,20 +149,20 @@
                     background-color: rgba(17, 26, 50, 0.95);
                     gap: 20px;
                     padding-top: 20px;
-                    z-index: 100; /* Yuqori qatlamda ko'rinadi */
-                    transform: translateX(0); /* Menyu ekranga chiqariladi */
+                    z-index: 100; 
+                    transform: translateX(0); 
                     transition: transform 0.4s ease;
                 }
                 
                 .navbar__link {
-                    color: #fff; /* Rangini o'zgartiring */
+                    color: #fff; 
                     padding: 10px 20px;
                     width: 100%;
                     text-align: left;
                     transition: background-color 0.3s ease;
 
                     &:hover {
-                        background-color: #222a3f; /* Hoverda fon o'zgaradi */
+                        background-color: #222a3f; 
                     }
                 }
             }
