@@ -25,3 +25,21 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuIcon = document.querySelector(".navbar__menu");
+  const navbar = document.querySelector(".navbar");
+
+  menuIcon.addEventListener("click", function () {
+
+      navbar.classList.toggle("navbar--open");
+      if (navbar.classList.contains("navbar--open")) {
+        this.style.zIndex = "100000"; //
+        this.innerHTML = "&times;"; // 
+      } else {
+          this.innerHTML = '<i class="fa-solid fa-bars" style="color: #ffd43b"></i>'; 
+      }
+  });
+});
+
+
